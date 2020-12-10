@@ -39,3 +39,10 @@ dwelling_sales %>%
     x = "Sales price",
     y = "Number of sales"
   )
+
+#Created a function that finds the percentage of sales that are Dwellings
+ds_ts <- (nrow(dwelling_sales) / total_sales) * 100
+
+#Took object, from the above function, and rounded the percentage to two decimal places
+rounded_dsts <- round(ds_ts, digits = 2)
+
